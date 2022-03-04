@@ -39,14 +39,19 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
     href: '/farms',
     icon: EarnIcon,
     fillIcon: EarnFillIcon,
+    disabled: true,
     items: [
       {
         label: t('Farms'),
         href: '/farms',
+        tip: 'Soon',
+        disabled: true,
       },
       {
         label: t('Pools'),
         href: '/pools',
+        tip: 'Soon',
+        disabled: true,
       },
     ],
   },
@@ -55,18 +60,25 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
     href: '/prediction',
     icon: TrophyIcon,
     fillIcon: TrophyFillIcon,
+    disabled: true,
     items: [
       {
         label: t('Trading Competition'),
         href: '/competition',
+        tip: 'Soon',
+        disabled: true,
       },
       {
         label: t('Prediction (BETA)'),
         href: '/prediction',
+        tip: 'Soon',
+        disabled: true,
       },
       {
         label: t('Lottery'),
         href: '/lottery',
+        tip: 'Soon',
+        disabled: true,
       },
     ],
   },
@@ -75,18 +87,25 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
     href: `${nftsBaseUrl}`,
     icon: NftIcon,
     fillIcon: NftFillIcon,
+    disabled: true,
     items: [
       {
         label: t('Overview'),
         href: `${nftsBaseUrl}`,
+        tip: 'Soon',
+        disabled: true,
       },
       {
         label: t('Collections'),
         href: `${nftsBaseUrl}/collections`,
+        tip: 'Soon',
+        disabled: true,
       },
       {
         label: t('Activity'),
         href: `${nftsBaseUrl}/activity`,
+        tip: 'Soon',
+        disabled: true,
       },
     ],
   },
@@ -103,10 +122,14 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
       {
         label: t('IFO'),
         href: '/ifo',
+        tip: 'Soon',
+        disabled: true,
       },
       {
         label: t('Voting'),
         href: '/voting',
+        tip: 'Soon',
+        disabled: true,
       },
       {
         type: DropdownMenuItemType.DIVIDER,
@@ -114,20 +137,22 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
       {
         label: t('Leaderboard'),
         href: '/teams',
+        tip: 'Soon',
+        disabled: true,
       },
       {
         type: DropdownMenuItemType.DIVIDER,
       },
-      {
-        label: t('Blog'),
-        href: 'https://medium.com/pancakeswap',
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-      },
-      {
-        label: t('Docs'),
-        href: 'https://docs.pancakeswap.finance',
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-      },
+      // {
+      //   label: t('Blog'),
+      //   href: 'https://medium.com/pancakeswap',
+      //   type: DropdownMenuItemType.EXTERNAL_LINK,
+      // },
+      // {
+      //   label: t('Docs'),
+      //   href: 'https://docs.pancakeswap.finance',
+      //   type: DropdownMenuItemType.EXTERNAL_LINK,
+      // },
     ],
   },
 ]

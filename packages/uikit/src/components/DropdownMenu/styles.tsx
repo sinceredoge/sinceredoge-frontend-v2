@@ -15,6 +15,7 @@ const getTextColor = ({
 };
 
 export const DropdownMenuItem = styled.button<StyledDropdownMenuItemProps & { $isActive: boolean }>`
+  position: relative;
   align-items: center;
   border: 0;
   background: transparent;
@@ -38,6 +39,13 @@ export const DropdownMenuItem = styled.button<StyledDropdownMenuItemProps & { $i
     opacity: 0.85;
     transform: translateY(1px);
   }
+`;
+
+export const DropdownMenuItemAbsolute = styled.div`
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  color: red;
 `;
 
 export const StyledDropdownMenuItemContainer = styled.div`

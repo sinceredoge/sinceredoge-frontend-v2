@@ -20,11 +20,18 @@ export const StyledMenuItemContainer = styled.div<StyledMenuItemProps>`
     `};
 `;
 
+export const StyledMenuItemAbsolute = styled.div<StyledMenuItemProps>`
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+`;
+
 const StyledMenuItem = styled.a<StyledMenuItemProps>`
   position: relative;
   display: flex;
   align-items: center;
-
+  cursor: pointer;
   color: ${({ theme, $isActive }) => ($isActive ? theme.colors.secondary : theme.colors.textSubtle)};
   font-size: 16px;
   font-weight: ${({ $isActive }) => ($isActive ? "600" : "400")};
@@ -45,7 +52,7 @@ const StyledMenuItem = styled.a<StyledMenuItemProps>`
   ${({ $variant }) =>
     $variant === "default"
       ? `
-    padding: 0 16px;
+    padding: 0 20px;
     height: 48px;
   `
       : `
